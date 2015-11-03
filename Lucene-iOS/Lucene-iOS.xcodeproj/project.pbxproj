@@ -13,6 +13,15 @@
 		A7687EC31BE8D6B20051984C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7687EC11BE8D6B20051984C /* Main.storyboard */; };
 		A7687EC51BE8D6B20051984C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7687EC41BE8D6B20051984C /* Assets.xcassets */; };
 		A7687EC81BE8D6B20051984C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7687EC61BE8D6B20051984C /* LaunchScreen.storyboard */; };
+		A7687ED41BE8D9380051984C /* RestAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = A7687ED01BE8D9380051984C /* RestAPI.m */; settings = {ASSET_TAGS = (); }; };
+		A7687ED51BE8D9380051984C /* LuceneAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7687ED21BE8D9380051984C /* LuceneAPIManager.m */; settings = {ASSET_TAGS = (); }; };
+		A7687ED91BE8DA910051984C /* UtilityHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A7687ED81BE8DA910051984C /* UtilityHelper.m */; settings = {ASSET_TAGS = (); }; };
+		A7687EDE1BE8E2C80051984C /* SearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7687EDC1BE8E2C80051984C /* SearchTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		A7687EDF1BE8E2C80051984C /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7687EDD1BE8E2C80051984C /* SearchTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		A7687EE61BE8E2F20051984C /* ResultTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7687EE41BE8E2F20051984C /* ResultTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		A7687EE71BE8E2F20051984C /* ResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7687EE51BE8E2F20051984C /* ResultTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		A7687EEC1BE8E6D90051984C /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7687EEA1BE8E6D90051984C /* ResultViewController.m */; settings = {ASSET_TAGS = (); }; };
+		A7687EED1BE8E6D90051984C /* ResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7687EEB1BE8E6D90051984C /* ResultViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		C676D2A0B3EF1C3C03F27638 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8926620066EF635748923447 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +39,21 @@
 		A7687EC41BE8D6B20051984C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7687EC71BE8D6B20051984C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7687EC91BE8D6B20051984C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7687ED01BE8D9380051984C /* RestAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RestAPI.m; path = "Rest API/RestAPI.m"; sourceTree = "<group>"; };
+		A7687ED11BE8D9380051984C /* RestAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RestAPI.h; path = "Rest API/RestAPI.h"; sourceTree = "<group>"; };
+		A7687ED21BE8D9380051984C /* LuceneAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LuceneAPIManager.m; path = "Rest API/LuceneAPIManager.m"; sourceTree = "<group>"; };
+		A7687ED31BE8D9380051984C /* LuceneAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LuceneAPIManager.h; path = "Rest API/LuceneAPIManager.h"; sourceTree = "<group>"; };
+		A7687ED71BE8DA910051984C /* UtilityHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityHelper.h; sourceTree = "<group>"; };
+		A7687ED81BE8DA910051984C /* UtilityHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityHelper.m; sourceTree = "<group>"; };
+		A7687EDB1BE8E2C80051984C /* SearchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTableViewCell.h; sourceTree = "<group>"; };
+		A7687EDC1BE8E2C80051984C /* SearchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewCell.m; sourceTree = "<group>"; };
+		A7687EDD1BE8E2C80051984C /* SearchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
+		A7687EE31BE8E2F20051984C /* ResultTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultTableViewCell.h; sourceTree = "<group>"; };
+		A7687EE41BE8E2F20051984C /* ResultTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultTableViewCell.m; sourceTree = "<group>"; };
+		A7687EE51BE8E2F20051984C /* ResultTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultTableViewCell.xib; sourceTree = "<group>"; };
+		A7687EE91BE8E6D90051984C /* ResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultViewController.h; sourceTree = "<group>"; };
+		A7687EEA1BE8E6D90051984C /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
+		A7687EEB1BE8E6D90051984C /* ResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,11 +106,12 @@
 		A7687EB71BE8D6B20051984C /* Lucene-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				A7687EE81BE8E6B80051984C /* View Controllers */,
+				A7687EDA1BE8E2940051984C /* UI Components */,
+				A7687ED61BE8DA760051984C /* Helper */,
+				A7687ECF1BE8D91F0051984C /* RestAPI */,
 				A7687EBB1BE8D6B20051984C /* AppDelegate.h */,
 				A7687EBC1BE8D6B20051984C /* AppDelegate.m */,
-				A7687EBE1BE8D6B20051984C /* ViewController.h */,
-				A7687EBF1BE8D6B20051984C /* ViewController.m */,
-				A7687EC11BE8D6B20051984C /* Main.storyboard */,
 				A7687EC41BE8D6B20051984C /* Assets.xcassets */,
 				A7687EC61BE8D6B20051984C /* LaunchScreen.storyboard */,
 				A7687EC91BE8D6B20051984C /* Info.plist */,
@@ -101,6 +126,52 @@
 				A7687EB91BE8D6B20051984C /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A7687ECF1BE8D91F0051984C /* RestAPI */ = {
+			isa = PBXGroup;
+			children = (
+				A7687ED11BE8D9380051984C /* RestAPI.h */,
+				A7687ED01BE8D9380051984C /* RestAPI.m */,
+				A7687ED31BE8D9380051984C /* LuceneAPIManager.h */,
+				A7687ED21BE8D9380051984C /* LuceneAPIManager.m */,
+			);
+			name = RestAPI;
+			sourceTree = "<group>";
+		};
+		A7687ED61BE8DA760051984C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A7687ED71BE8DA910051984C /* UtilityHelper.h */,
+				A7687ED81BE8DA910051984C /* UtilityHelper.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		A7687EDA1BE8E2940051984C /* UI Components */ = {
+			isa = PBXGroup;
+			children = (
+				A7687EDB1BE8E2C80051984C /* SearchTableViewCell.h */,
+				A7687EDC1BE8E2C80051984C /* SearchTableViewCell.m */,
+				A7687EDD1BE8E2C80051984C /* SearchTableViewCell.xib */,
+				A7687EE31BE8E2F20051984C /* ResultTableViewCell.h */,
+				A7687EE41BE8E2F20051984C /* ResultTableViewCell.m */,
+				A7687EE51BE8E2F20051984C /* ResultTableViewCell.xib */,
+			);
+			name = "UI Components";
+			sourceTree = "<group>";
+		};
+		A7687EE81BE8E6B80051984C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A7687EBE1BE8D6B20051984C /* ViewController.h */,
+				A7687EBF1BE8D6B20051984C /* ViewController.m */,
+				A7687EC11BE8D6B20051984C /* Main.storyboard */,
+				A7687EE91BE8E6D90051984C /* ResultViewController.h */,
+				A7687EEA1BE8E6D90051984C /* ResultViewController.m */,
+				A7687EEB1BE8E6D90051984C /* ResultViewController.xib */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,7 +234,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7687EE71BE8E2F20051984C /* ResultTableViewCell.xib in Resources */,
+				A7687EED1BE8E6D90051984C /* ResultViewController.xib in Resources */,
 				A7687EC81BE8D6B20051984C /* LaunchScreen.storyboard in Resources */,
+				A7687EDF1BE8E2C80051984C /* SearchTableViewCell.xib in Resources */,
 				A7687EC51BE8D6B20051984C /* Assets.xcassets in Resources */,
 				A7687EC31BE8D6B20051984C /* Main.storyboard in Resources */,
 			);
@@ -209,9 +283,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7687ED91BE8DA910051984C /* UtilityHelper.m in Sources */,
+				A7687ED41BE8D9380051984C /* RestAPI.m in Sources */,
+				A7687EE61BE8E2F20051984C /* ResultTableViewCell.m in Sources */,
 				A7687EC01BE8D6B20051984C /* ViewController.m in Sources */,
 				A7687EBD1BE8D6B20051984C /* AppDelegate.m in Sources */,
+				A7687ED51BE8D9380051984C /* LuceneAPIManager.m in Sources */,
+				A7687EDE1BE8E2C80051984C /* SearchTableViewCell.m in Sources */,
 				A7687EBA1BE8D6B20051984C /* main.m in Sources */,
+				A7687EEC1BE8E6D90051984C /* ResultViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +334,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -273,7 +354,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -311,7 +392,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -324,6 +405,7 @@
 			baseConfigurationReference = 007115095DC4FEAD98F74125 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Lucene-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lucene.Lucene-iOS";
@@ -336,6 +418,7 @@
 			baseConfigurationReference = 0B740224110957888A5CD180 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				INFOPLIST_FILE = "Lucene-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lucene.Lucene-iOS";
