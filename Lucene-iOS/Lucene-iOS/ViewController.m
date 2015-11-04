@@ -12,7 +12,7 @@
 #import "ResultViewController.h"
 #import "Rest API/RestAPI.h"
 
-@interface ViewController () <RESTAPIDelegate>
+@interface ViewController () <RESTAPIDelegate, UITextFieldDelegate>
 {
 	NSUserDefaults *ud;
 }
@@ -48,6 +48,30 @@
 	
 	[self setTitle:@"Search"];
 	self.navigationController.navigationBar.translucent = NO;
+	
+	UIBarButtonItem *doneButton = [[UIBarButtonItem alloc]
+								   initWithTitle:@"Done"
+								   style:UIBarButtonItemStylePlain
+								   target:self
+								   action:@selector(dismissKeyboardFromScreen)];
+	
+	self.navigationItem.leftBarButtonItem = doneButton;
+
+	UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+								   initWithTarget:self
+								   action:@selector(dismissKeyboardFromScreen)];
+	
+	[self.view addGestureRecognizer:tap];
+	
+	[[NSNotificationCenter defaultCenter] addObserver:self
+											 selector:@selector(keyboardWillShow:)
+												 name:UIKeyboardWillShowNotification
+											   object:nil];
+	
+	[[NSNotificationCenter defaultCenter] addObserver:self
+											 selector:@selector(keyboardWillHide:)
+												 name:UIKeyboardWillHideNotification
+											   object:nil];
 	
 	self.searchTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
 }
@@ -89,6 +113,7 @@
 	
 	[cell setSearchFieldIdentifier:[self.identifiers objectAtIndex:indexPath.row]];
 	[cell.searchTextField setPlaceholder:[self.placeHolders objectAtIndex:indexPath.row]];
+	[cell.searchTextField setDelegate:self];
 	
 	if ([ud valueForKey:cell.searchFieldIdentifier])
 		[cell.searchTextField setText:[ud valueForKey:cell.searchFieldIdentifier]];
@@ -174,5 +199,42 @@
 	
 	[self presentViewController:alert animated:YES completion:nil];
 }
+
+#pragma mark - Keyboard Handler
+
+-(void)dismissKeyboardFromScreen {
+	
+	[self.view endEditing:YES];
+}
+
+- (void)keyboardWillShow:(NSNotification *)notification
+{
+	CGSize keyboardSize = [[[notification userInfo] objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
+	
+	UIEdgeInsets contentInsets;
+	if (UIInterfaceOrientationIsPortrait([[UIApplication sharedApplication] statusBarOrientation])) {
+		contentInsets = UIEdgeInsetsMake(0.0, 0.0, (keyboardSize.height), 0.0);
+	} else {
+		contentInsets = UIEdgeInsetsMake(0.0, 0.0, (keyboardSize.width), 0.0);
+	}
+	
+	self.searchTableView.contentInset = contentInsets;
+	self.searchTableView.scrollIndicatorInsets = contentInsets;
+}
+
+- (void)keyboardWillHide:(NSNotification *)notification
+{
+	self.searchTableView.contentInset = UIEdgeInsetsZero;
+	self.searchTableView.scrollIndicatorInsets = UIEdgeInsetsZero;
+}
+
+#pragma mark - TextField Delegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+
+	[textField resignFirstResponder];
+	return YES;
+}
+
 
 @end
