@@ -9,6 +9,9 @@
 #import "LuceneAPIManager.h"
 #import "AFNetworkActivityIndicatorManager.h"
 
+#define MACBOOKSERVERURL	@"http://0.0.0.0:8000"
+#define LOCALHOSTSERVERURL	@"http://192.168.1.4:8000"
+
 @implementation LuceneAPIManager
 
 #pragma mark - Methods
@@ -42,8 +45,8 @@
 	static LuceneAPIManager *_sharedManager = nil;
 	
 	dispatch_once(&pred, ^{
-		_sharedManager = [[self alloc] initWithBaseURL:[NSURL URLWithString:@"http://0.0.0.0:8000"]];
-//		_sharedManager = [[self alloc] initWithBaseURL:[NSURL URLWithString:@"https://192.168.1.4:8000"]];
+//		_sharedManager = [[self alloc] initWithBaseURL:[NSURL URLWithString:MACBOOKSERVERURL]];
+		_sharedManager = [[self alloc] initWithBaseURL:[NSURL URLWithString:LOCALHOSTSERVERURL]];
 
 	});
 	
