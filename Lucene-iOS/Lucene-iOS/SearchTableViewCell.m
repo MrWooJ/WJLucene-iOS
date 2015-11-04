@@ -24,6 +24,8 @@
 
 	if (![self.searchTextField.text isEqualToString:@""]) {
 		
+		[self.searchTextField setTextColor:[UIColor greenColor]];
+		
 		NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
 		[ud setValue:self.searchTextField.text forKey:self.searchFieldIdentifier];
 		[ud synchronize];
